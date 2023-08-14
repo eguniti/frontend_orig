@@ -26,7 +26,10 @@ router.get('/', function(req, res, next) {
         res.render('index', {
           title: '3tier App' ,
           request_uuid: body.request_uuid,
-          time: body.time
+          //time: body.time
+          id: body.id,
+          name: body.name,
+          age: body.age
         });
       }
     }
