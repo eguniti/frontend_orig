@@ -24,12 +24,14 @@ router.get('/', function(req, res, next) {
         return res.status(500).send('error running request to ' + api_url);
       } else {
         res.render('index', {
-          title: '3tier App' ,
+          title: 'Welcome to Employee Details Portal for Tech Company' ,
           request_uuid: body.request_uuid,
           //time: body.time
           id: body.id,
           name: body.name,
-          age: body.age
+          age: body.age,
+          address: body.address,
+          salary: body.salary
         });
       }
     }
