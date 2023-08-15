@@ -24,7 +24,7 @@ router.get('/', function(req, res, next) {
         return res.status(500).send('error running request to ' + api_url);
       } else {
         res.render('index', {
-          title: 'Welcome to Employee Details of Nagarro Company' ,
+          title: 'Welcome to Employee Details of NAGARRO Company' ,
           request_uuid: body.request_uuid,
           //time: body.time
           id: body.id,
