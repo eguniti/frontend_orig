@@ -25,13 +25,7 @@ router.get('/', function(req, res, next) {
       } else {
         res.render('index', {
           title: 'Welcome to Employee Details of NAGARRO Company' ,
-          request_uuid: body.request_uuid,
-          //time: body.time
-          id: body.id,
-          name: body.name,
-          age: body.age,
-          address: body.address,
-          salary: body.salary
+         employeeData: body
         });
       }
     }
