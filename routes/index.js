@@ -25,7 +25,7 @@ router.get('/', function(req, res, next) {
       } else {
         res.render('index', {
           title: 'Welcome to Employee Details of NAGARRO Company' ,
-         employeeData: body.rows
+         employeeData: body
         });
       }
     }
