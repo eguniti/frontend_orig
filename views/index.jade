@@ -1,22 +1,22 @@
 doctype html 
 html(lang='en')
   head
-     p(align= 'centre'): img(src="/images/logo.png", width='500', height='500')
+     p: img(src="/images/logo.png", width='500', height='200',align= 'centre')
      div
-     h2(style= 'margin-left:auto;margin-right:auto;') Nagarro's Employee Information
+     h2(align ='centre') Nagarro's Employee Information
      table(style='border:1 solid black;margin-left:auto;margin-right:auto;width:50%')
       thead
         tr
-          th ID
-          th Name
-          th Age
-          th Address
-          th Salary
+          th(text-align='left',bgcolor='#96D4D4') ID
+          th(text-align='left',bgcolor='#96D4D4') Name
+          th(text-align='left',bgcolor='#96D4D4') Age
+          th(text-align='left',bgcolor='#96D4D4') Address
+          th(text-align='left',bgcolor='#96D4D4') Salary
       tbody
         each srec in employeeData
          tr
-          td #{srec.id}
-          td #{srec.name}
-          td #{srec.age}
-          td #{srec.address}
-          td #{srec.salary} 
+          td(text-align='left') #{srec.id}
+          td(text-align='left') #{srec.name}
+          td(text-align='left') #{srec.age}
+          td(text-align='left') #{srec.address}
+          td(text-align='left') #{srec.salary} 
