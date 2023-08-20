@@ -1,32 +1,22 @@
 doctype html
 html(lang='en')
   head
-    title = title
-  body
-    .table-data
-      h2 Employee Information
-      |         <%
-      |         if(employeeData.length!=0){
-      |         var i=1;
-      |         employeeData.forEach(function(data){
-      |         %>
-      |         <%  i++; }) %>
-      |         <% } else{ %>
-      |         <% } %>
-      table(border='1')
-        tbody
-          tr
-            th ID
-            th Name
-            th Age
-            th Address
-            th Salary
-          
-          tr
-            td <%=data.id; %>
-            td <%=data.name %>
-            td <%=data.age %>
-            td <%=data.address %>
-            td <%=data.salary %>
-          tr
-            td(colspan='7') No Data Found
+     #{title}
+     div
+     h2 Employee Information
+     table(border='1')
+      thead
+        tr
+          th ID
+          th Name
+          th Age
+          th Address
+          th Salary
+      tbody
+        each srec in employeeData
+         tr
+          td #{srec.id}
+          td #{srec.name}
+          td #{srec.age}
+          td #{srec.address}
+          td #{srec.salary}
