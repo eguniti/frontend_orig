@@ -1,6 +1,6 @@
 ## Web 
 
-Forntend Application NodeJS
+Forntend Application
 
 ### install the node packages for the web tier:
 npm install
