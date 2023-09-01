@@ -15,7 +15,7 @@ RUN apt -y install nodejs
 # Copying the frontend code into /opt/frontend
 COPY . /opt/frontend
 
-# Installing the node apps
+# Installing the node app
 RUN npm install
 
 # Starting the application when container will start
